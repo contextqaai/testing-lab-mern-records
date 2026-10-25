@@ -1,0 +1,48 @@
+{
+  "title": "MERN \u00b7 React + Express + MongoDB",
+  "upstream": "https://github.com/mongodb-developer/mern-stack-example",
+  "upstream_commit": "6a5e9397b197cbb8edb34c787af7e6c8977b0152",
+  "tags": [
+    "MERN",
+    "Node.js",
+    "Express",
+    "React",
+    "MongoDB",
+    "Replit"
+  ],
+  "environment": "container",
+  "hosted_url": null,
+  "contextqa_run_verified": false,
+  "scenarios": [
+    {
+      "id": "mern-records-01",
+      "title": "Create record",
+      "assertion": "The synthetic name, position and level appear after saving.",
+      "status": "exercise-not-executed"
+    },
+    {
+      "id": "mern-records-02",
+      "title": "Read after reload",
+      "assertion": "The saved record remains visible after a fresh page load.",
+      "status": "exercise-not-executed"
+    },
+    {
+      "id": "mern-records-03",
+      "title": "Update record",
+      "assertion": "Editing the selected record changes only that record.",
+      "status": "exercise-not-executed"
+    },
+    {
+      "id": "mern-records-04",
+      "title": "Delete fixture",
+      "assertion": "Deleting a disposable synthetic record removes it from the list.",
+      "status": "exercise-not-executed"
+    },
+    {
+      "id": "mern-records-05",
+      "title": "Invalid API input",
+      "assertion": "Desired contract: invalid input is rejected without a write. Upstream documents this validation as missing; this is a known-gap exercise, not a passing baseline.",
+      "status": "exercise-not-executed"
+    }
+  ]
+}

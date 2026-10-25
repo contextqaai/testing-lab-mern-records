@@ -1,3 +1,11 @@
+# ContextQA Testing Lab — MERN · React + Express + MongoDB
+
+[Start the exercises](lab/README.md) · [Scenario checklist](lab/scenarios.json) · [Stack/platform catalog](https://github.com/contextqaai/testing-lab)
+
+Source available; hosted sessions and ContextQA execution results are not verified. Original project: [mongodb-developer/mern-stack-example](https://github.com/mongodb-developer/mern-stack-example). Upstream attribution/license remain in this repository. No upstream endorsement is implied.
+
+## Upstream project documentation
+
 # MERN Stack Example: Employee Records App (MongoDB Atlas, Express, React, Node.js)
 
 A full-stack CRUD application built with MongoDB, Express, React, and Node.js (MERN).
