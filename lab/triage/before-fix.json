@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-25",
+  "method": "Real Express HTTP requests with a synthetic injected database adapter; no Atlas connection",
+  "node": "24.19.0",
+  "command": "cd mern/server && node --test test/record-response.test.js",
+  "tests": 2,
+  "passed": 1,
+  "failed": 1,
+  "failure": {
+    "scenario": "Missing valid record ID",
+    "expected_status": 404,
+    "actual_status": 200
+  },
+  "empty_post_observation": {
+    "status": 200,
+    "synthetic_insert_calls": 1
+  },
+  "contextqa_execution": false
+}
