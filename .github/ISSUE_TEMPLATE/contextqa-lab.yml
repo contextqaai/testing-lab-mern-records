@@ -1,0 +1,44 @@
+name: ContextQA lab reproduction or bug
+description: Report an observed defect or a clearly disclosed teaching exercise.
+title: "[Lab] "
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Case type
+      options:
+        - Observed defect
+        - Disclosed regression exercise
+        - Investigation / not reproduced
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App commit and environment
+      description: Include the commit, app variant, browser/runtime and synthetic fixture version.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Minimal reproduction
+      description: Numbered steps and prerequisites. Use synthetic data; omit tokens, passwords and private URLs.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected versus observed result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and verification boundary
+      description: Link actual reports or attach safe screenshots. State whether this was a browser check, API check or ContextQA execution. Say unavailable when no run receipt exists.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Fix acceptance and regression check
+      description: Describe the assertion that should fail before the fix and pass afterward.
