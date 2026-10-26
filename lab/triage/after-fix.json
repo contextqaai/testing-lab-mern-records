@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-25",
+  "method": "Real Express HTTP requests with injected synthetic DB adapter",
+  "command": "cd mern/server && npm test",
+  "tests": 2,
+  "passed": 2,
+  "failed": 0,
+  "missing_record_status": 404,
+  "existing_record_status": 200,
+  "contextqa_execution": false,
+  "database_integration_verified": false
+}

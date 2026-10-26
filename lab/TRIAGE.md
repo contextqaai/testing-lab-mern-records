@@ -9,3 +9,9 @@ From `mern/server`, install locked dependencies with `npm ci --ignore-scripts`, 
 The router factory keeps actual route behavior available to the HTTP test without importing the real database connection. The deployed application still wires its original database through `routes/record.js`. Fixtures are synthetic; no customer data or credentials are used.
 
 Scope: reproduce → classify HTTP contract defect → change response ordering → rerun missing/existing assertions → review the linked PR. A real database integration test and hosted ContextQA workflow remain additional gates before deployment.
+
+## Issue links and outcome
+
+[Missing-resource defect #1](https://github.com/contextqaai/testing-lab-mern-records/issues/1): before fix, missing-resource response was HTTP 200; after changing response ordering, both missing/existing-record HTTP tests pass. Use `npm test` from `mern/server`. See the before/after receipts in `lab/triage/`.
+
+[Validation defect #2](https://github.com/contextqaai/testing-lab-mern-records/issues/2) remains open; this change does not add validation or authentication. Installation reported dependency advisories in the pinned server packages; dependency remediation and real database/hosted checks remain deployment work.
